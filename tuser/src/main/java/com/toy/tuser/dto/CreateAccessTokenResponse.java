@@ -1,2 +1,10 @@
-package com.toy.tuser.dto;public class CreateAccessTokenResponse {
+package com.toy.tuser.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@AllArgsConstructor
+@Getter
+public class CreateAccessTokenResponse {
+    private String accessToken;
 }
