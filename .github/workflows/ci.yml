@@ -10,6 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - run: ls -la
+        name: where r u
+
       - uses: actions/setup-java@v4
         with:
           distribution: 'corretto'
