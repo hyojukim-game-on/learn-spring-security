@@ -20,13 +20,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">12</div>
+<div class="counter">5</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">12</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -38,7 +38,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.020s</div>
+<div class="counter">1.534s</div>
 <p>duration</p>
 </div>
 </td>
@@ -47,8 +47,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -58,69 +58,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Packages</a>
 </li>
 <li>
-<a href="#tab1">Packages</a>
-</li>
-<li>
-<a href="#tab2">Classes</a>
+<a href="#tab1">Classes</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<ul class="linkList">
-<li>
-<a href="classes/com.toy.tuser.TuserApplicationTests.html">TuserApplicationTests</a>.
-<a href="classes/com.toy.tuser.TuserApplicationTests.html#contextLoads()">contextLoads()</a>
-</li>
-<li>
-<a href="classes/com.toy.tuser.config.jwt.TokenProviderTest.html">TokenProviderTest</a>.
-<a href="classes/com.toy.tuser.config.jwt.TokenProviderTest.html#generateToken()">generateToken(): 유저 정보와 만료 기간을 전달해 토큰을 만들 수 있다.</a>
-</li>
-<li>
-<a href="classes/com.toy.tuser.config.jwt.TokenProviderTest.html">TokenProviderTest</a>.
-<a href="classes/com.toy.tuser.config.jwt.TokenProviderTest.html#getAuthentication()">getAuthenticaation():토큰 기반으로 인증 정보를 가져올 수 있다.</a>
-</li>
-<li>
-<a href="classes/com.toy.tuser.config.jwt.TokenProviderTest.html">TokenProviderTest</a>.
-<a href="classes/com.toy.tuser.config.jwt.TokenProviderTest.html#getUserId()">getUserId(): 토큰으로 유저 ID를 가져올 수 있다.</a>
-</li>
-<li>
-<a href="classes/com.toy.tuser.config.jwt.TokenProviderTest.html">TokenProviderTest</a>.
-<a href="classes/com.toy.tuser.config.jwt.TokenProviderTest.html#validToken_invalidToken()">validToken(): 만료된 토큰인 때에 유효성 검증에 실패한다.</a>
-</li>
-<li>
-<a href="classes/com.toy.tuser.config.jwt.TokenProviderTest.html">TokenProviderTest</a>.
-<a href="classes/com.toy.tuser.config.jwt.TokenProviderTest.html#validToken_validToken()">validToken():유효한 토큰인 때에 유효성 검증에 성공한다.</a>
-</li>
-<li>
-<a href="classes/com.toy.tuser.controller.BlogApiControllerTest.html">BlogApiControllerTest</a>.
-<a href="classes/com.toy.tuser.controller.BlogApiControllerTest.html#addArticle()">addArticle: 블로그 글 추가에 성공한다.</a>
-</li>
-<li>
-<a href="classes/com.toy.tuser.controller.BlogApiControllerTest.html">BlogApiControllerTest</a>.
-<a href="classes/com.toy.tuser.controller.BlogApiControllerTest.html#deleteArticle()">deleteArticle: 블로그 글 삭제에 성공한다.</a>
-</li>
-<li>
-<a href="classes/com.toy.tuser.controller.BlogApiControllerTest.html">BlogApiControllerTest</a>.
-<a href="classes/com.toy.tuser.controller.BlogApiControllerTest.html#findAllArticles()">findAllArticles: 블로그 글 목록 조회에 성공한다.</a>
-</li>
-<li>
-<a href="classes/com.toy.tuser.controller.BlogApiControllerTest.html">BlogApiControllerTest</a>.
-<a href="classes/com.toy.tuser.controller.BlogApiControllerTest.html#findArticle()">findArticle: 블로그 글 조회에 성공한다.</a>
-</li>
-<li>
-<a href="classes/com.toy.tuser.controller.BlogApiControllerTest.html">BlogApiControllerTest</a>.
-<a href="classes/com.toy.tuser.controller.BlogApiControllerTest.html#updateArticle()">updateArticle: 블로그 글 수정에 성공한다.</a>
-</li>
-<li>
-<a href="classes/com.toy.tuser.controller.TokenApiControllerTest.html">TokenApiControllerTest</a>.
-<a href="classes/com.toy.tuser.controller.TokenApiControllerTest.html#createNewAccessToken()">createNewAccessToken: 새로운 액세스 토큰을 발급한다.</a>
-</li>
-</ul>
-</div>
-<div id="tab1" class="tab">
 <h2>Packages</h2>
 <table>
 <thead>
@@ -135,39 +79,19 @@
 </thead>
 <tbody>
 <tr>
-<td class="failures">
-<a href="packages/com.toy.tuser.html">com.toy.tuser</a>
-</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0.007s</td>
-<td class="failures">0%</td>
-</tr>
-<tr>
-<td class="failures">
-<a href="packages/com.toy.tuser.config.jwt.html">com.toy.tuser.config.jwt</a>
-</td>
-<td>5</td>
-<td>5</td>
-<td>0</td>
-<td>0.009s</td>
-<td class="failures">0%</td>
-</tr>
-<tr>
-<td class="failures">
+<td class="success">
 <a href="packages/com.toy.tuser.controller.html">com.toy.tuser.controller</a>
 </td>
-<td>6</td>
-<td>6</td>
+<td>5</td>
 <td>0</td>
-<td>0.004s</td>
-<td class="failures">0%</td>
+<td>0</td>
+<td>1.534s</td>
+<td class="success">100%</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Classes</h2>
 <table>
 <thead>
@@ -182,44 +106,14 @@
 </thead>
 <tbody>
 <tr>
-<td class="failures">
-<a href="classes/com.toy.tuser.TuserApplicationTests.html">com.toy.tuser.TuserApplicationTests</a>
-</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0.007s</td>
-<td class="failures">0%</td>
-</tr>
-<tr>
-<td class="failures">
-<a href="classes/com.toy.tuser.config.jwt.TokenProviderTest.html">com.toy.tuser.config.jwt.TokenProviderTest</a>
+<td class="success">
+<a href="classes/com.toy.tuser.controller.ExpenseApiControllerTest.html">com.toy.tuser.controller.ExpenseApiControllerTest</a>
 </td>
 <td>5</td>
-<td>5</td>
 <td>0</td>
-<td>0.009s</td>
-<td class="failures">0%</td>
-</tr>
-<tr>
-<td class="failures">
-<a href="classes/com.toy.tuser.controller.BlogApiControllerTest.html">com.toy.tuser.controller.BlogApiControllerTest</a>
-</td>
-<td>5</td>
-<td>5</td>
 <td>0</td>
-<td>0.003s</td>
-<td class="failures">0%</td>
-</tr>
-<tr>
-<td class="failures">
-<a href="classes/com.toy.tuser.controller.TokenApiControllerTest.html">com.toy.tuser.controller.TokenApiControllerTest</a>
-</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0.001s</td>
-<td class="failures">0%</td>
+<td>1.534s</td>
+<td class="success">100%</td>
 </tr>
 </tbody>
 </table>
@@ -232,7 +126,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.8</a> at Jul 8, 2024, 8:49:39 PM</p>
+<a href="http://www.gradle.org">Gradle 8.8</a> at Aug 6, 2024, 10:24:59 PM</p>
 </div>
 </div>
 </body>

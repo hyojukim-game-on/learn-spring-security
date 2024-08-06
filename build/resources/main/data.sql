@@ -1,3 +1,3 @@
-INSERT INTO article (title, content, author, created_at, updated_at) VALUES ('제목1', '내용1', 'user1', NOW(), NOW())
-INSERT INTO article (title, content, author, created_at, updated_at) VALUES ('제목2', '내용2', 'user2', NOW(), NOW())
-INSERT INTO article (title, content, author, created_at, updated_at) VALUES ('제목3', '내용3', 'user3', NOW(), NOW())
+INSERT INTO expense (category, detail, amount, created_at, updated_at, spender) VALUES ('카페', '이디야 아이스 아메리카노', 2800, NOW(), NOW(), '효주')
+INSERT INTO expense (category, detail, amount, created_at, updated_at, spender) VALUES ('물품구입비', '로지텍 MX 무선 마우스', 130000, NOW(), NOW(), '효주')
+INSERT INTO expense (category, detail, amount, created_at, updated_at, spender) VALUES ('월세', '월세', 350000, NOW(), NOW(), '효주')

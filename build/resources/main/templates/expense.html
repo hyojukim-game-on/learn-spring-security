@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>내 가계부</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+<div class="p-5 mb-5 text-center</> bg-light">
+    <h1 class="mb-3">My MoneySheet</h1>
+    <h4 class="mb-3">내 가계부에 오신 것을 환영합니다.</h4>
+</div>
+
+<div class="container mt-5">
+<div class="row">
+    <div class="col-lg-8">
+        <expense>
+            <input type="hidden" id="expense-id" th:value="${expense.id}">
+            <header class="mb-4">
+                <h1 class="fw-bolder mb-1" th:text="${expense.title}"></h1>
+                <div class="text-muted fst-italic mb-2" th:text="|${expense.author} 님께서 ${#temporals.format(expense.createdAt, 'yyyy-MM-dd HH:mm')} 에 소비하셨습니다. |"></div>
+            </header>
+            <section class="mb-5">
+                <p class="fs-5 mb-4" th:text="${expense.content}"></p>
+            </section>
+            <button type="button" id="modify-btn"
+                    th:onClick="|location.href='@{/new-expense?id={expenseId}
+                    (expenseId=${expense.id})}'|"
+                    class="btn btn-primary btn-sm">소비 내역 수정하기</button>
+            <button type="button" id="delete-btn"
+                    class="btn btn-secondary btn-sm">소비 내역 삭제하기</button>
+        </expense>
+    </div>
+</div>
+</div>
+<script src="/js/expense.js"></script>
+</body>
+</html>
